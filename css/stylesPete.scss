@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+
+@import "colors";
+
+* {
+    box-sizing: border-box;
+    //transition: ease all .5s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+}
+
+
+.headerContainer{
+    height: 100vh;
+    background-image: url("../images/headerBackground.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 20px;
+
+    .desktopSocial{
+        display: none;
+    }
+
+    .topBar {
+
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+
+        .logo{
+            max-width:125px;
+        }
+
+        .soMe{
+            display: flex;
+
+            img{
+                padding: 5px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+    }
+
+    .headerText{
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        padding-top: 300px;
+
+
+        h1{
+            font-weight: bold;
+            font-size: 32px;
+            letter-spacing: -1px;
+            padding-bottom: 10px;
+            display:none;
+            //transform: scaleX(0);
+        }
+
+        .headerUnderline{
+            min-height: 7px;
+            background: $blueGradient;
+            max-width: 85px;
+            opacity:0;
+            margin-left:-1000px;
+        }
+
+        p{
+            font-weight: bold;
+            padding-top: 10px;
+            display:none;
+            .breakDesktop{
+                display: none;
+            }
+
+        }
+
+        .ctaHeader{
+            background: $blueGradient;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 30px;
+            color: white;
+            margin-top: 20px;
+            font-size: 11px;
+            font-weight: bold;
+            display:none;
+        }
+
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+    .headerContainer{
+        .paddingContainer{
+            padding: 0 100px;
+        }
+        .headerText{
+
+            h1{
+                font-size: 60px !important;
+            }
+
+            p{
+                font-size: 18px !important;
+                .breakMobile{
+                    display: none;
+                }
+                .breakDesktop{
+                    display: block !important;
+                }
+
+            }
+
+        }
+
+
+    }
+
+
+@media (min-width: 1600px) {
+
+    .headerContainer{
+
+        .desktopSocial{
+            display: flex;
+            flex-direction: column;
+
+            .socialLine1{
+                transition: ease all 0s;
+                width: 2px;
+                height: 340px;
+                background: white;
+                position: absolute;
+                transform: scaleY(0);
+                transform-origin: 50% 100%;
+                margin: 100px 0 0 20px;
+            }
+
+            .socialIcons{
+                transition: ease all 0s;
+                position: absolute;
+                margin: 470px 0 0 0px;
+                width: 50px;
+                display:none;
+
+                img {
+                    padding: 5px;
+                }
+            }
+
+            .socialLine2{
+                transition: ease all 0s;
+                transform: scaleY(0);
+                transform-origin: 50% 0%;
+                width: 2px;
+                height: 340px;
+                background: white;
+                position: absolute;
+                margin: 600px 0 0 20px;
+            }
+        }
+
+        .paddingContainer{
+            padding: 0 300px;
+        }
+        .topBar {
+
+            .soMe{
+                display: none;
+            }
+
+        }
+
+    }
+
+    .headerText{
+
+        h1{
+            font-size: 82px !important;
+        }
+
+        .headerUnderline{
+            min-width: 200px;
+        }
+
+        p{
+            font-size: 18px !important;
+            .breakMobile{
+                display: none;
+            }
+            .breakDesktop{
+                display: block !important;
+            }
+
+        }
+
+        .ctaHeader{
+            font-size: 12px !important;
+
+        }
+
+    }
+}
+
+}
