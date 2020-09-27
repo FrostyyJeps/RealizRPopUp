@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap');
+
+@import "colors";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 56px;
+}
+
+.pa{
+    padding-top: 14px;
+    padding-bottom: 20px;
+}
+
+.dcontainer{
+    padding: 47px;
+
+    .samtale{
+        // border: 1px solid black;
+        box-shadow: 0 6px 12px rgba( 0, 0, 0, 0.5);
+        padding: 10px 10px 24px 10px;
+        line-height: 20px;
+        color: #030657;
+        font-size: 14px;
+        font-weight: 550;
+
+        .svg{
+            width: 54px;
+            height: 53px;
+        }
+
+        a{
+            font-size: 8px;
+            line-height: 30px;
+            color: white;
+            background-color: $darkBlue;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    }
+
+    .team{
+        // border: 1px solid black;
+        box-shadow: 0 6px 12px rgba( 0, 0, 0, 0.5);
+        padding: 10px 10px 24px 10px;
+        line-height: 20px;
+        color: white;
+        font-size: 14px;
+        font-weight: 550;
+        margin-top: 38px;
+        background: $blueGradient;
+
+        .svg{
+            width: 45px;
+            height: 44px;
+        }
+
+        a{
+            font-size: 8px;
+            line-height: 30px;
+            color: #0080BB;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    }
+
+    .tiden{
+        // border: 1px solid black;
+        box-shadow: 0 6px 12px rgba( 0, 0, 0, 0.5);
+        padding: 10px 10px 24px 10px;
+        line-height: 20px;
+        color: #030657;
+        font-size: 14px;
+        font-weight: 550;
+        margin-top: 38px;
+
+        .svg{
+            width: 40px;
+            height: 39px;
+        }
+
+        a{
+            font-size: 8px;
+            line-height: 30px;
+            color: white;
+            background-color: $darkBlue;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.contactForm{
+    background-color: #EFFDFF;
+    color: $darkBlue;
+    margin-top: 50px;
+
+    h2{
+        font-size: 32px;
+        line-height: 30px;
+        text-align: center;
+        padding: 65px 90px 20px 90px;
+        margin: 0;
+    }
+
+    hr{
+        margin: 0;
+        width: 133px;
+        margin: auto;
+        border: 1.5px solid $darkBlue;
+        background-color: $darkBlue;
+    }
+
+    .pdesktop{
+        display: none;
+    }
+
+    .pmobile{
+        padding: 31px 20px 40px 20px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        display: block;
+    }
+
+    .formWrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input{
+            height: 48px;
+            width: 237px;
+            margin-bottom: 40px;
+            font-size: 14px;
+            color: $darkBlue;
+            border: none;
+            box-shadow: 0 3px 6px rgba( black, 0.5);
+        }
+
+        #tilbudKnap{
+            box-shadow: none;
+            width: 157px;
+            height: 44px;
+            border-radius: 10px;
+            background: $blueGradient;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
+
+.kontaktBox{
+    color: $darkBlue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+
+    h2{
+        font-size: 32px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 33px;
+    }
+
+    .pdesktop{
+        display: none;
+    }
+
+    .pmobile{
+        padding: 0 20px 40px 20px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        display: block;
+    }
+
+    a{
+        font-size: 16px;
+        line-height: 30px;
+        color: white;
+        background: $blueGradient;
+        padding: 9px 48px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+footer{
+    font-size: 18px;
+    font-weight: bold;
+    color: $darkBlue;
+    line-height: 52px;
+    text-align: center;
+    margin: 160px auto 22px auto;
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+.dcontainer{
+    display: flex;
+    padding: 120px 300px;
+    justify-content: center;
+
+    .samtale, .team, .tiden{
+        max-width: 415px;
+        p{
+            font-size: 14px;
+        }
+
+        a{
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .team, .tiden{
+        margin-top: 0;
+        margin-left: 38px;
+    }
+
+    .samtale{
+        .svg{
+            width: 70px;
+            height: 65px;
+        }
+    }
+
+    .team{
+        .svg{
+            width: 66px;
+            height: 65px;
+        }
+    }
+
+    .tiden{
+        .svg{
+            width: 59px;
+            height: 58px;
+        }
+    }
+}
+
+.contactForm{
+
+    h2{
+        font-size: 49px;
+        line-height: 52px;
+        text-align: center;
+        padding: 82px 0 28px 0;
+    }
+
+    .pmobile{
+        display: none;
+    }
+
+    .pdesktop{
+        display: block;
+        padding: 47px 556px 60px 556px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .formWrap{
+        display: grid;
+        padding-left: 556px;
+        grid-template-columns: repeat(3, 237px);
+        grid-column-gap: 50px;
+        justify-items: center;
+
+        #tilbudKnap{
+            margin: 37px 0 84px 0;
+            grid-column: 2/3;
+        }
+    }
+}
+
+.kontaktBox{
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        font-size: 32px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 38px;
+    }
+
+    .pmobile{
+        display: none;
+    }
+
+    .pdesktop{
+        display: block;
+        padding: 0 556px 60px 556px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    a{
+        max-width: 157px;
+        align-self: center;
+    }
+}
+
+footer{
+    margin: 190px auto 20px auto;
+}
+
+
+}
