@@ -32,6 +32,10 @@ img {
     background-size: cover;
     padding: 0 20px;
 
+    .logoDesktop{
+        display: none;
+    }
+
     .desktopSocial{
         display: none;
     }
@@ -46,6 +50,8 @@ img {
             max-width:125px;
         }
 
+
+
         .soMe{
             display: flex;
 
@@ -58,81 +64,95 @@ img {
 
     }
 
-    .headerText{
-        font-family: 'Raleway', sans-serif;
-        color: white;
-        padding-top: 300px;
 
+    .headerFlex {
+        height: 100vh;
+        display: flex;
+        align-items: center;
 
-        h1{
-            font-weight: bold;
-            font-size: 32px;
-            letter-spacing: -1px;
-            padding-bottom: 10px;
-            display:none;
-            //transform: scaleX(0);
-        }
+        .headerText {
+            font-family: 'Raleway', sans-serif;
+            color: white;
 
-        .headerUnderline{
-            min-height: 7px;
-            background: $blueGradient;
-            max-width: 85px;
-            opacity:0;
-            margin-left:-1000px;
-        }
+            h1 {
+                font-weight: bold;
+                font-size: 32px;
+                letter-spacing: -1px;
+                padding-bottom: 10px;
+                display: none;
+                //transform: scaleX(0);
+            }
 
-        p{
-            font-weight: bold;
-            padding-top: 10px;
-            display:none;
-            .breakDesktop{
+            .headerUnderline {
+                min-height: 7px;
+                background: $blueGradient;
+                max-width: 85px;
+                opacity: 0;
+                margin-left: -1000px;
+            }
+
+            p {
+                font-weight: bold;
+                padding-top: 10px;
+                display: none;
+
+                .breakDesktop {
+                    display: none;
+                }
+
+            }
+
+            .ctaHeader {
+                background: $blueGradient;
+                border: none;
+                border-radius: 10px;
+                padding: 10px 30px;
+                color: white;
+                margin-top: 20px;
+                font-size: 11px;
+                font-weight: bold;
                 display: none;
             }
 
         }
-
-        .ctaHeader{
-            background: $blueGradient;
-            border: none;
-            border-radius: 10px;
-            padding: 10px 30px;
-            color: white;
-            margin-top: 20px;
-            font-size: 11px;
-            font-weight: bold;
-            display:none;
-        }
-
     }
-
 
 }
 
 @media (min-width: 768px) {
 
     .headerContainer{
+
+
         .paddingContainer{
             padding: 0 100px;
         }
-        .headerText{
 
-            h1{
-                font-size: 60px !important;
-            }
+        .headerFlex {
 
-            p{
-                font-size: 18px !important;
-                .breakMobile{
-                    display: none;
+
+            .headerText {
+
+                h1 {
+                    font-size: 60px !important;
                 }
-                .breakDesktop{
-                    display: block !important;
+
+                p {
+                    font-size: 18px !important;
+
+                    .breakMobile {
+                        display: none;
+                    }
+
+                    .breakDesktop {
+                        display: block !important;
+                    }
+
                 }
 
             }
 
         }
-
 
     }
 
@@ -140,6 +160,19 @@ img {
 @media (min-width: 1600px) {
 
     .headerContainer{
+
+        .logoDesktop{
+            display: inline;
+            position: absolute;
+            margin: 30px 0 0 75px;
+            max-width: 150px;
+        }
+
+        .logo{
+            display: none;
+        }
+
+
 
         .desktopSocial{
             display: flex;
