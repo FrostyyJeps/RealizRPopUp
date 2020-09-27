@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="58" viewBox="0 0 59 58">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_35" data-name="Rectangle 35" width="59" height="58" transform="translate(0.006 -0.051)" fill="#030657" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-0.006 0.051)" clip-path="url(#clip-path)">
+    <g id="miu" transform="translate(2.485 -0.325)">
+      <g id="Artboard-1" transform="translate(0 0)">
+        <path id="editor-alarm-timer-clock-glyph" d="M3693.454,1857.629l5.913,5.888,1.974-1.966-5.452-5.429a25.378,25.378,0,1,0-29.281-.143l-5.6,5.573,1.974,1.966,6.036-6.01a25.415,25.415,0,0,0,24.434.123Zm-12.105-22.333V1818.4h2.806V1835.3h.013v2.832h-.013v.011h-2.806v-.011H3670.07V1835.3Zm-23.695-15.268-1.839-2.354a5.646,5.646,0,0,1,.965-7.915l4.453-3.479a5.644,5.644,0,0,1,7.913.978l.867,1.11.661.846A28.3,28.3,0,0,0,3657.654,1820.028Zm34.369-10.815,1.528-1.956a5.646,5.646,0,0,1,7.913-.978l4.453,3.479a5.645,5.645,0,0,1,.966,7.915l-1.84,2.354A28.3,28.3,0,0,0,3692.023,1809.213Z" transform="translate(-3654.62 -1805.089)" fill="#030657" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
