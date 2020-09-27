@@ -34,11 +34,23 @@ img {
     padding-bottom: 20px;
 }
 
+
+.bold{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 56px;
+}
+
+.pa{
+    padding-top: 14px;
+    padding-bottom: 20px;
+}
+
+
 .dcontainer{
-    padding: 47px;
+    padding: 12.533vw;
 
     .samtale{
-        // border: 1px solid black;
         box-shadow: 0 6px 12px rgba( 0, 0, 0, 0.5);
         padding: 10px 10px 24px 10px;
         line-height: 20px;
@@ -96,7 +108,6 @@ img {
     }
 
     .tiden{
-        // border: 1px solid black;
         box-shadow: 0 6px 12px rgba( 0, 0, 0, 0.5);
         padding: 10px 10px 24px 10px;
         line-height: 20px;
@@ -190,6 +201,7 @@ img {
     color: $darkBlue;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     margin-top: 150px;
 
@@ -223,6 +235,8 @@ img {
         text-align: center;
         text-decoration: none;
         font-weight: bold;
+        width: 157px;
+        align-self: center;
     }
 }
 
@@ -237,12 +251,13 @@ footer{
 
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 769px){
 
 .dcontainer{
-    display: flex;
-    padding: 120px 300px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2vw;
+    padding: 120px 15.625vw;
 
     .samtale, .team, .tiden{
         max-width: 415px;
@@ -258,7 +273,6 @@ footer{
 
     .team, .tiden{
         margin-top: 0;
-        margin-left: 38px;
     }
 
     .samtale{
@@ -296,24 +310,37 @@ footer{
         display: none;
     }
 
-    .pdesktop{
-        display: block;
-        padding: 47px 556px 60px 556px;
-        text-align: center;
-        font-size: 14px;
-        line-height: 20px;
-    }
+    .contactWrap{
 
-    .formWrap{
-        display: grid;
-        padding-left: 556px;
-        grid-template-columns: repeat(3, 237px);
-        grid-column-gap: 50px;
-        justify-items: center;
+        padding: 0 28.958vw 0 28.958vw;
 
-        #tilbudKnap{
-            margin: 37px 0 84px 0;
-            grid-column: 2/3;
+        .pdesktop{
+            display: block;
+            padding: 4.352vw 0 5.556vw 0;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .formWrap{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            input{
+                height: 48px;
+                width: 12.344vw;
+                margin-bottom: 40px;
+                font-size: 14px;
+                color: $darkBlue;
+                border: none;
+                box-shadow: 0 3px 6px rgba( black, 0.5);
+            }
+
+            #tilbudKnap{
+                margin: 37px 0 84px 0;
+                grid-column: 2/3;
+            }
         }
     }
 }
@@ -336,7 +363,6 @@ footer{
 
     .pdesktop{
         display: block;
-        padding: 0 556px 60px 556px;
         text-align: center;
         font-size: 14px;
         line-height: 20px;
