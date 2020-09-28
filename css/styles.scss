@@ -69,32 +69,45 @@ img {
    
     @media only screen and (min-width: 768px) {
 
+            margin: 0 100px !important;
+
+justify-content: center;
+
         .tilbudWrapper {
             flex-direction: row;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
         }
 
         .reverse {
             flex-direction: row-reverse;
+
         }
 
         .tilbudItem {
             h1 {
-              font-size: 32px;  
+              font-size: 32px;
             }
         }
+
+
     
     }
 
     @media only screen and (min-width: 1440px) {
+
+        margin: 0 300px;
+
+        .tilbudWrapper {
+            width: 100%;
+        }
 
         .tilbudItem {
             width: 40%;
             align-content: center;
 
             video {
-                width: 100%;
+                width: 408px;
             }
 
             h1 {

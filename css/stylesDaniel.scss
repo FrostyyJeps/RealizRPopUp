@@ -48,7 +48,11 @@ img {
 
 
 .dcontainer{
-    padding: 12.533vw;
+
+    padding: 20px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .samtale{
         box-shadow: 0 6px 12px rgba( 0, 0, 0, 0.5);
@@ -57,10 +61,12 @@ img {
         color: #030657;
         font-size: 14px;
         font-weight: 550;
+        max-width: 281px;
+
 
         .svg{
-            width: 54px;
-            height: 53px;
+            width: 80px;
+            height: 80px;
         }
 
         a{
@@ -87,10 +93,12 @@ img {
         font-weight: 550;
         margin-top: 38px;
         background: $blueGradient;
+        max-width: 281px;
+
 
         .svg{
-            width: 45px;
-            height: 44px;
+            width: 80px;
+            height: 80px;
         }
 
         a{
@@ -115,10 +123,11 @@ img {
         font-size: 14px;
         font-weight: 550;
         margin-top: 38px;
+        max-width: 281px;
 
         .svg{
-            width: 40px;
-            height: 39px;
+            width: 80px;
+            height: 80px;
         }
 
         a{
@@ -252,13 +261,11 @@ footer{
 
 
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 768px){
 
 .dcontainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2vw;
-    padding: 120px 15.625vw;
+    display: flex;
+
 
     .samtale, .team, .tiden{
         max-width: 415px;
@@ -278,23 +285,40 @@ footer{
 
     .samtale{
         .svg{
-            width: 70px;
-            height: 65px;
+            width: 80px;
+            height: 80px;
         }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .team{
         .svg{
-            width: 66px;
-            height: 65px;
+            width: 80px;
+            height: 80px;
         }
+        margin-top: 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .tiden{
         .svg{
-            width: 59px;
-            height: 58px;
+            width: 80px;
+            height: 80px;
         }
+        margin-top: 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    .button1{
+        max-width: 130px;
     }
 }
 
@@ -344,6 +368,7 @@ footer{
             }
         }
     }
+
 }
 
 .kontaktBox{
@@ -367,7 +392,7 @@ footer{
         text-align: center;
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
     }
 
     a{
@@ -380,5 +405,48 @@ footer{
     margin: 190px auto 20px auto;
 }
 
+
+}
+
+
+.blueUnderline{
+    height: 2px;
+    background-color: #030657;
+    max-width: 30px;
+}
+
+.whiteUnderline{
+    height: 2px;
+    background-color: white;
+    max-width: 30px;
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    .dcontainer{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 20px;
+
+        .samtale{
+            width: 25%;
+            margin: 20px;
+            min-height: 329px;
+        }
+
+        .tiden{
+            width: 25%;
+            margin: 20px;
+            min-height: 329px;
+        }
+
+        .team{
+            width: 25%;
+            margin: 20px;
+            min-height: 329px;
+        }
+    }
 
 }
